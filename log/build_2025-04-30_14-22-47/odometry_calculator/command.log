@@ -1,0 +1,4 @@
+Invoking command in '/home/qhx/ros2_ws/build/odometry_calculator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/qhx/ros2_ws/build/odometry_calculator -- -j16 -l16
+Invoked command in '/home/qhx/ros2_ws/build/odometry_calculator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/qhx/ros2_ws/build/odometry_calculator -- -j16 -l16
+Invoking command in '/home/qhx/ros2_ws/build/odometry_calculator': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/qhx/ros2_ws/build/odometry_calculator
+Invoked command in '/home/qhx/ros2_ws/build/odometry_calculator' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/qhx/ros2_ws/build/odometry_calculator

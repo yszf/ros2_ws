@@ -1,0 +1,204 @@
+[0.000000] (-) TimerEvent: {}
+[0.000941] (-) JobUnselected: {'identifier': 'cpp_pubsub'}
+[0.001067] (-) JobUnselected: {'identifier': 'turtlesim'}
+[0.001129] (odometry_calculator) JobQueued: {'identifier': 'odometry_calculator', 'dependencies': OrderedDict()}
+[0.001186] (odometry_calculator) JobStarted: {'identifier': 'odometry_calculator'}
+[0.012104] (odometry_calculator) JobProgress: {'identifier': 'odometry_calculator', 'progress': 'cmake'}
+[0.012990] (odometry_calculator) Command: {'cmd': ['/usr/bin/cmake', '/home/qhx/ros2_ws/src/odometry_calculator', '-DCMAKE_INSTALL_PREFIX=/home/qhx/ros2_ws/install/odometry_calculator'], 'cwd': '/home/qhx/ros2_ws/build/odometry_calculator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en'), ('USER', 'qhx'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/qhx'), ('OLDPWD', '/home/qhx/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1824'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'qhx'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'qhx'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/luobin:@/tmp/.ICE-unix/1796,unix/luobin:/tmp/.ICE-unix/1796'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6b9680a5_c440_43c8_b967_5384f927b8d1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.181'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/qhx/ros2_ws/build/odometry_calculator'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099328] (-) TimerEvent: {}
+[0.185494] (odometry_calculator) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.199498] (-) TimerEvent: {}
+[0.300070] (-) TimerEvent: {}
+[0.335341] (odometry_calculator) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.353848] (odometry_calculator) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.400295] (-) TimerEvent: {}
+[0.489697] (odometry_calculator) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.500392] (-) TimerEvent: {}
+[0.508908] (odometry_calculator) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.509778] (odometry_calculator) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.510914] (odometry_calculator) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.519759] (odometry_calculator) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.600637] (-) TimerEvent: {}
+[0.683532] (odometry_calculator) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.700768] (-) TimerEvent: {}
+[0.702803] (odometry_calculator) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.703509] (odometry_calculator) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.704620] (odometry_calculator) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.712550] (odometry_calculator) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.800990] (-) TimerEvent: {}
+[0.901516] (-) TimerEvent: {}
+[0.974149] (odometry_calculator) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.001745] (-) TimerEvent: {}
+[1.102302] (-) TimerEvent: {}
+[1.120809] (odometry_calculator) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.191755] (odometry_calculator) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.199517] (odometry_calculator) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.202449] (-) TimerEvent: {}
+[1.213540] (odometry_calculator) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.233946] (odometry_calculator) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.260858] (odometry_calculator) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.302721] (-) TimerEvent: {}
+[1.331309] (odometry_calculator) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.336369] (odometry_calculator) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.402921] (-) TimerEvent: {}
+[1.503499] (-) TimerEvent: {}
+[1.542698] (odometry_calculator) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.597664] (odometry_calculator) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.603641] (-) TimerEvent: {}
+[1.666417] (odometry_calculator) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.680159] (odometry_calculator) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.703841] (-) TimerEvent: {}
+[1.804383] (-) TimerEvent: {}
+[1.824160] (odometry_calculator) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.824797] (odometry_calculator) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.904614] (-) TimerEvent: {}
+[1.977425] (odometry_calculator) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.980153] (odometry_calculator) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.004993] (-) TimerEvent: {}
+[2.079660] (odometry_calculator) StdoutLine: {'line': b'-- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[2.105185] (-) TimerEvent: {}
+[2.205685] (-) TimerEvent: {}
+[2.217672] (odometry_calculator) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.232195] (odometry_calculator) StdoutLine: {'line': b'-- Generating done\n'}
+[2.238146] (odometry_calculator) StdoutLine: {'line': b'-- Build files have been written to: /home/qhx/ros2_ws/build/odometry_calculator\n'}
+[2.250733] (odometry_calculator) CommandEnded: {'returncode': 0}
+[2.251966] (odometry_calculator) JobProgress: {'identifier': 'odometry_calculator', 'progress': 'build'}
+[2.255206] (odometry_calculator) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/qhx/ros2_ws/build/odometry_calculator', '--', '-j16', '-l16'], 'cwd': '/home/qhx/ros2_ws/build/odometry_calculator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en'), ('USER', 'qhx'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/qhx'), ('OLDPWD', '/home/qhx/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1824'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'qhx'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'qhx'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/luobin:@/tmp/.ICE-unix/1796,unix/luobin:/tmp/.ICE-unix/1796'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6b9680a5_c440_43c8_b967_5384f927b8d1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.181'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/qhx/ros2_ws/build/odometry_calculator'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.305867] (-) TimerEvent: {}
+[2.355484] (odometry_calculator) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/odometer_node.dir/src/odometry_calculator.cpp.o\x1b[0m\n'}
+[2.406037] (-) TimerEvent: {}
+[2.506488] (-) TimerEvent: {}
+[2.607151] (-) TimerEvent: {}
+[2.707677] (-) TimerEvent: {}
+[2.808167] (-) TimerEvent: {}
+[2.908666] (-) TimerEvent: {}
+[3.009141] (-) TimerEvent: {}
+[3.109654] (-) TimerEvent: {}
+[3.210152] (-) TimerEvent: {}
+[3.310657] (-) TimerEvent: {}
+[3.411133] (-) TimerEvent: {}
+[3.511917] (-) TimerEvent: {}
+[3.612553] (-) TimerEvent: {}
+[3.713063] (-) TimerEvent: {}
+[3.813744] (-) TimerEvent: {}
+[3.914243] (-) TimerEvent: {}
+[4.014793] (-) TimerEvent: {}
+[4.115258] (-) TimerEvent: {}
+[4.215751] (-) TimerEvent: {}
+[4.316246] (-) TimerEvent: {}
+[4.416736] (-) TimerEvent: {}
+[4.517224] (-) TimerEvent: {}
+[4.617907] (-) TimerEvent: {}
+[4.718412] (-) TimerEvent: {}
+[4.818962] (-) TimerEvent: {}
+[4.919462] (-) TimerEvent: {}
+[5.019956] (-) TimerEvent: {}
+[5.120624] (-) TimerEvent: {}
+[5.221291] (-) TimerEvent: {}
+[5.322024] (-) TimerEvent: {}
+[5.422502] (-) TimerEvent: {}
+[5.523209] (-) TimerEvent: {}
+[5.623716] (-) TimerEvent: {}
+[5.724227] (-) TimerEvent: {}
+[5.824694] (-) TimerEvent: {}
+[5.925180] (-) TimerEvent: {}
+[6.025694] (-) TimerEvent: {}
+[6.126182] (-) TimerEvent: {}
+[6.226662] (-) TimerEvent: {}
+[6.327134] (-) TimerEvent: {}
+[6.427631] (-) TimerEvent: {}
+[6.528104] (-) TimerEvent: {}
+[6.628612] (-) TimerEvent: {}
+[6.729087] (-) TimerEvent: {}
+[6.829592] (-) TimerEvent: {}
+[6.930072] (-) TimerEvent: {}
+[7.030556] (-) TimerEvent: {}
+[7.131084] (-) TimerEvent: {}
+[7.231608] (-) TimerEvent: {}
+[7.332147] (-) TimerEvent: {}
+[7.432680] (-) TimerEvent: {}
+[7.533192] (-) TimerEvent: {}
+[7.633664] (-) TimerEvent: {}
+[7.734095] (-) TimerEvent: {}
+[7.834514] (-) TimerEvent: {}
+[7.934961] (-) TimerEvent: {}
+[8.035385] (-) TimerEvent: {}
+[8.135840] (-) TimerEvent: {}
+[8.236382] (-) TimerEvent: {}
+[8.336815] (-) TimerEvent: {}
+[8.437322] (-) TimerEvent: {}
+[8.537829] (-) TimerEvent: {}
+[8.638310] (-) TimerEvent: {}
+[8.738824] (-) TimerEvent: {}
+[8.839311] (-) TimerEvent: {}
+[8.939821] (-) TimerEvent: {}
+[9.040300] (-) TimerEvent: {}
+[9.140794] (-) TimerEvent: {}
+[9.241267] (-) TimerEvent: {}
+[9.341739] (-) TimerEvent: {}
+[9.442222] (-) TimerEvent: {}
+[9.542882] (-) TimerEvent: {}
+[9.643404] (-) TimerEvent: {}
+[9.743895] (-) TimerEvent: {}
+[9.844366] (-) TimerEvent: {}
+[9.944868] (-) TimerEvent: {}
+[10.045335] (-) TimerEvent: {}
+[10.145838] (-) TimerEvent: {}
+[10.246309] (-) TimerEvent: {}
+[10.346799] (-) TimerEvent: {}
+[10.447389] (-) TimerEvent: {}
+[10.547910] (-) TimerEvent: {}
+[10.648387] (-) TimerEvent: {}
+[10.748915] (-) TimerEvent: {}
+[10.849410] (-) TimerEvent: {}
+[10.949931] (-) TimerEvent: {}
+[11.050415] (-) TimerEvent: {}
+[11.150926] (-) TimerEvent: {}
+[11.251428] (-) TimerEvent: {}
+[11.351931] (-) TimerEvent: {}
+[11.452429] (-) TimerEvent: {}
+[11.552918] (-) TimerEvent: {}
+[11.653390] (-) TimerEvent: {}
+[11.753874] (-) TimerEvent: {}
+[11.854321] (-) TimerEvent: {}
+[11.954829] (-) TimerEvent: {}
+[12.055290] (-) TimerEvent: {}
+[12.155862] (-) TimerEvent: {}
+[12.256367] (-) TimerEvent: {}
+[12.356912] (-) TimerEvent: {}
+[12.457435] (-) TimerEvent: {}
+[12.558005] (-) TimerEvent: {}
+[12.612528] (odometry_calculator) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable odometer_node\x1b[0m\n'}
+[12.658589] (-) TimerEvent: {}
+[12.759439] (-) TimerEvent: {}
+[12.860147] (-) TimerEvent: {}
+[12.960739] (-) TimerEvent: {}
+[13.061267] (-) TimerEvent: {}
+[13.161818] (-) TimerEvent: {}
+[13.262292] (-) TimerEvent: {}
+[13.299340] (odometry_calculator) StdoutLine: {'line': b'[100%] Built target odometer_node\n'}
+[13.316067] (odometry_calculator) CommandEnded: {'returncode': 0}
+[13.317396] (odometry_calculator) JobProgress: {'identifier': 'odometry_calculator', 'progress': 'install'}
+[13.338520] (odometry_calculator) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/qhx/ros2_ws/build/odometry_calculator'], 'cwd': '/home/qhx/ros2_ws/build/odometry_calculator', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en'), ('USER', 'qhx'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/qhx'), ('OLDPWD', '/home/qhx/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1824'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'qhx'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'qhx'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/luobin:@/tmp/.ICE-unix/1796,unix/luobin:/tmp/.ICE-unix/1796'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/6b9680a5_c440_43c8_b967_5384f927b8d1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.181'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/qhx/ros2_ws/build/odometry_calculator'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[13.356196] (odometry_calculator) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.356669] (odometry_calculator) StdoutLine: {'line': b'-- Installing: /home/qhx/ros2_ws/install/odometry_calculator/lib/odometry_calculator/odometer_node\n'}
+[13.362433] (-) TimerEvent: {}
+[13.364257] (odometry_calculator) StdoutLine: {'line': b'-- Set runtime path of "/home/qhx/ros2_ws/install/odometry_calculator/lib/odometry_calculator/odometer_node" to ""\n'}
+[13.364590] (odometry_calculator) StdoutLine: {'line': b'-- Installing: /home/qhx/ros2_ws/install/odometry_calculator/share/ament_index/resource_index/package_run_dependencies/odometry_calculator\n'}
+[13.364793] (odometry_calculator) StdoutLine: {'line': b'-- Installing: /home/qhx/ros2_ws/install/odometry_calculator/share/ament_index/resource_index/parent_prefix_path/odometry_calculator\n'}
+[13.364931] (odometry_calculator) StdoutLine: {'line': b'-- Up-to-date: /home/qhx/ros2_ws/install/odometry_calculator/share/odometry_calculator/environment/ament_prefix_path.sh\n'}
+[13.365114] (odometry_calculator) StdoutLine: {'line': b'-- Installing: /home/qhx/ros2_ws/install/odometry_calculator/share/odometry_calculator/environment/ament_prefix_path.dsv\n'}
+[13.365250] (odometry_calculator) StdoutLine: {'line': b'-- Up-to-date: /home/qhx/ros2_ws/install/odometry_calculator/share/odometry_calculator/environment/path.sh\n'}
+[13.365359] (odometry_calculator) StdoutLine: {'line': b'-- Installing: /home/qhx/ros2_ws/install/odometry_calculator/share/odometry_calculator/environment/path.dsv\n'}
+[13.365476] (odometry_calculator) StdoutLine: {'line': b'-- Installing: /home/qhx/ros2_ws/install/odometry_calculator/share/odometry_calculator/local_setup.bash\n'}
+[13.365737] (odometry_calculator) StdoutLine: {'line': b'-- Installing: /home/qhx/ros2_ws/install/odometry_calculator/share/odometry_calculator/local_setup.sh\n'}
+[13.365972] (odometry_calculator) StdoutLine: {'line': b'-- Installing: /home/qhx/ros2_ws/install/odometry_calculator/share/odometry_calculator/local_setup.zsh\n'}
+[13.366191] (odometry_calculator) StdoutLine: {'line': b'-- Installing: /home/qhx/ros2_ws/install/odometry_calculator/share/odometry_calculator/local_setup.dsv\n'}
+[13.366411] (odometry_calculator) StdoutLine: {'line': b'-- Installing: /home/qhx/ros2_ws/install/odometry_calculator/share/odometry_calculator/package.dsv\n'}
+[13.366581] (odometry_calculator) StdoutLine: {'line': b'-- Installing: /home/qhx/ros2_ws/install/odometry_calculator/share/ament_index/resource_index/packages/odometry_calculator\n'}
+[13.366711] (odometry_calculator) StdoutLine: {'line': b'-- Installing: /home/qhx/ros2_ws/install/odometry_calculator/share/odometry_calculator/cmake/odometry_calculatorConfig.cmake\n'}
+[13.366819] (odometry_calculator) StdoutLine: {'line': b'-- Installing: /home/qhx/ros2_ws/install/odometry_calculator/share/odometry_calculator/cmake/odometry_calculatorConfig-version.cmake\n'}
+[13.366926] (odometry_calculator) StdoutLine: {'line': b'-- Up-to-date: /home/qhx/ros2_ws/install/odometry_calculator/share/odometry_calculator/package.xml\n'}
+[13.369250] (odometry_calculator) CommandEnded: {'returncode': 0}
+[13.411355] (odometry_calculator) JobEnded: {'identifier': 'odometry_calculator', 'rc': 0}
+[13.412384] (-) EventReactorShutdown: {}
