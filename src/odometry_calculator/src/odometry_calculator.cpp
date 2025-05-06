@@ -38,6 +38,12 @@ class OdometerNode : public rclcpp::Node
 public:
     OdometerNode() : Node("odometer_node")
     {
+        // 打开日志文件
+        log_file_.open("odometry_log.txt", std::ios::app);
+        if (!log_file_.is_open()) {
+            RCLCPP_ERROR(this->get_logger(), "Failed to open log file.");
+        }
+
         // 读取之前的总里程
         read_previous_distance();
 
@@ -53,6 +59,13 @@ public:
             std::chrono::seconds(10), std::bind(&OdometerNode::timerCallback, this));
     }
 
+    ~OdometerNode()
+    {
+        if (log_file_.is_open()) {
+            log_file_.close();
+        }
+    }
+
 private:
     // 类成员变量
     double total_distance_2d = 0.0;
@@ -61,6 +74,14 @@ private:
     double current_distance_3d = 0.0;
     nav_msgs::msg::Odometry previous_odom;
     bool first_odom_received = false;
+    std::ofstream log_file_;
+
+    // 将日志信息写入文件的方法
+    void write_log_to_file(const std::string& log_msg) {
+        if (log_file_.is_open()) {
+            log_file_ << log_msg << std::endl;
+        }
+    }
 
     // 读取之前的总里程
     void read_previous_distance() {
@@ -69,7 +90,9 @@ private:
             file >> total_distance_2d >> total_distance_3d;
             file.close();
         } else {
-            RCLCPP_INFO(this->get_logger(), "[%s] total_distance.txt file not found.", get_current_datetime().c_str());
+            std::string log_msg = "[" + get_current_datetime() + "] total_distance.txt file not found.";
+            RCLCPP_INFO(this->get_logger(), log_msg.c_str());
+            write_log_to_file(log_msg);
         }
     }
 
@@ -79,16 +102,22 @@ private:
         if (file.is_open()) {
             file << total_distance_2d << " " << total_distance_3d << " " << current_distance_2d << " " << current_distance_3d;
             file.close();
-            RCLCPP_INFO(this->get_logger(), "[%s] Distance saved: Total 2D: %.2f m, Total 3D: %.2f m, Current 2D: %.2f m, Current 3D: %.2f m",
-                        get_current_datetime().c_str(), total_distance_2d, total_distance_3d, current_distance_2d, current_distance_3d);
+            std::string log_msg = "[" + get_current_datetime() + "] Distance saved: Total 2D: " + 
+                std::to_string(total_distance_2d) + " m, Total 3D: " + std::to_string(total_distance_3d) + 
+                " m, Current 2D: " + std::to_string(current_distance_2d) + " m, Current 3D: " + std::to_string(current_distance_3d) + " m";
+            RCLCPP_INFO(this->get_logger(), log_msg.c_str());
+            write_log_to_file(log_msg);
         }
     }
 
     void odomCallback(const nav_msgs::msg::Odometry::SharedPtr msg)
     {
         // 打印接收到数据的日志
-        RCLCPP_INFO(this->get_logger(), "[%s] Received odometry data. Position: (%.2f, %.2f, %.2f)", 
-                    get_current_datetime().c_str(), msg->pose.pose.position.x, msg->pose.pose.position.y, msg->pose.pose.position.z);
+        std::string log_msg = "[" + get_current_datetime() + "] Received odometry data. Position: (" + 
+            std::to_string(msg->pose.pose.position.x) + ", " + std::to_string(msg->pose.pose.position.y) + ", " + 
+            std::to_string(msg->pose.pose.position.z) + ")";
+        RCLCPP_INFO(this->get_logger(), log_msg.c_str());
+        write_log_to_file(log_msg);
 
         if (first_odom_received) {
             double d_2d = euclidean_distance_2d(previous_odom, *msg);
@@ -129,4 +158,4 @@ int main(int argc, char * argv[])
     rclcpp::spin(node);
     rclcpp::shutdown();
     return 0;
-}    
+}
