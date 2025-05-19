@@ -1,0 +1,10 @@
+orbbec_rtsp_server:
+  ros__parameters:
+    image_topic: "/camera/color/image_raw"  # 相机图像话题
+    width: 640                            # 视频宽度
+    height: 480                           # 视频高度
+    framerate: 30                         # 帧率
+    rtsp_host: "127.0.0.1"                # RTSP服务器地址
+    rtsp_port: "8554"                     # RTSP服务器端口
+    encoding: "H264"                      # 编码格式 (H264/H265)
+    bitrate: 1000                         # 码率 (kbps)
